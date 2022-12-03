@@ -1,0 +1,13 @@
+# funcion que dado el número lo de al reves
+
+def al_revés(número):
+    reves = 0
+    while número > 0:
+        reves = reves * 10 + número % 10
+        número //= 10
+    return reves
+
+número = int(input("Introduce un número (>=0): "))
+while número >= 0:
+    print(al_revés(número))
+    número = int(input("Introduce un número (>=0): "))

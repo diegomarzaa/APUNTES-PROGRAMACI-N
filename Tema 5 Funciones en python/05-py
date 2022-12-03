@@ -1,0 +1,13 @@
+# Pasar número a binario
+def en_binario(n):
+    cadena = ""
+    while n > 0:
+        cadena = str(n % 2) + cadena
+        n //= 2
+    return cadena
+
+
+n = int(input("Introduce un número (>=0): "))
+while n > 0:
+    print(f' {n} en binario es {en_binario(n)}')
+    n = int(input("Introduce otro número (>=0): "))
